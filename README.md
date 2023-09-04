@@ -14,6 +14,8 @@ Qfo is the estimated heat flux
 
 `[Nf, Nt-r+1] = size(Qfo)`
 
+r is the number of time steps including future data, default is 2
+
 Phi is the heat response to the reference heat flux
 `[Ns, Nf, Nt] = size(Phi)`
 

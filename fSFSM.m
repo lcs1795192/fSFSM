@@ -7,7 +7,7 @@ function Qfo=fSFSM(Y, Phi, r)
 % Data: 20230528
 % [Ns, Nt+1] =size(Y)
 % [Ns, Nf, Nt]=size(Phi);
-% r is a scalar.
+% r is is the number of time steps including future data, default is 2.
 [Ns, Nf, Nt]=size(Phi);
 Qfo=zeros(Nf, Nt-(r-1));
 deltaY=Y(:, 2:end)-Y(:, 1);
